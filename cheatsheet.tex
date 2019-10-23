@@ -1,19 +1,6 @@
-% ------------------------------------------------ %
-% File              shortcuts.tex
-% Author            Troy
-% Description       TeXstudio shortcuts cheat sheet
-%                   Version 1.2b
-% Notes:            Inspired by:    https://tex.stackexchange.com/q/365456
-%                   See changelog:  https://pastebin.com/U7r8ug5t
-% How to use:		1. Place \rowcolor{impt} in front of rows you want to highlight
-%					2. The colour of 'impt' can be changed under `Table settings' -> \definecolor{}
-%					3. Add your own shortcuts in the last table. 
-%					   Note the shortcut macros defined under `Shortcuts for the shortcuts'.
-% Boring Stuff:		Feel free to use this anyway you like. :)
-% ------------------------------------------------ %
-
-%\RequirePackage[l2tabu, orthodox]{nag}
 \documentclass[a4paper]{article}
+
+% import packages
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{libertine}     
@@ -24,7 +11,7 @@
 \usepackage[dvipsnames,table]{xcolor}
 \usepackage{multicol,booktabs,tabularx}
 
-% Shortcuts for the shortcuts
+% define new commands for shortcuts
 \newcommand{\hlx}{\\\midrule}
 \newcommand{\cmd}[1]{\textbf{#1}}
 \newcommand{\tbl}{\textbackslash}
@@ -36,34 +23,23 @@
 \newcommand{\altshiftp}{Alt$+$Shift$+$}
 \newcommand*{\altcmd}{\hspace*{1em}\rule[.5ex]{3.5em}{.4pt}}
 
-% General document settings
-\setlength{\parindent}{0pt}
-\newcommand{\spacebtwtables}{%
-	\newline%
-	\vspace*{1em}%
-	\newline%
-}
+% document settings
 \pagestyle{empty}
-\sbox9{\scriptsize\libertine% 
-	\cmd{\ctrlshiftp \#[0--9]}% Enter the longest command here
-}
+\setlength{\parindent}{0pt}
+\sbox9{\scriptsize\libertine\cmd{\ctrlshiftp \#[0--9]}}
+\newcommand{\spacebtwtables}{\newline \vspace*{1em} \newline}
 
-% Mdframed settings
-\global\mdfdefinestyle{mystyle}{%
-	linecolor=gray,linewidth=1pt,%
-	leftmargin=0mm,rightmargin=0mm,skipbelow=0mm,skipabove=0mm
-}
+% title settings
+\global\mdfdefinestyle{mystyle}{linecolor=gray,linewidth=1pt,leftmargin=0mm,rightmargin=0mm,skipbelow=0mm,skipabove=0mm}
 
-% Table settings
+% table settings
 \renewcommand\arraystretch{1.2}
+\definecolor{impt}{HTML}{E6E7E9}
 \renewcommand{\aboverulesep}{0pt}
 \renewcommand{\belowrulesep}{0pt}
 \newcommand{\headbf}[1]{\Large\textbf{#1}}
-\definecolor{impt}{HTML}{E6E7E9}
 \newcolumntype{P}{>{\columncolor{white}[0pt][\tabcolsep]}X}	
 \newcolumntype{L}{>{\columncolor{white}[\tabcolsep][0pt]}m{\wd9}}
-
-% =========================== %
 
 \begin{document}
 \begin{multicols*}{4}
