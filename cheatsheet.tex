@@ -12,7 +12,7 @@
 \usepackage{multicol,booktabs,tabularx}
 
 % define new commands for shortcuts
-\newcommand{\hlx}{\\\midrule}
+\newcommand{\hlx}{\\\midrule[0.3ex]}
 \newcommand{\cmd}[1]{\textbf{#1}}
 \newcommand{\tbl}{\textbackslash}
 \newcommand{\ctrlp}{Ctrl$+$}
@@ -22,10 +22,13 @@
 \newcommand{\shiftp}{Shift$+$}
 \newcommand{\altshiftp}{Alt$+$Shift$+$}
 \newcommand*{\altcmd}{\hspace*{1em}\rule[.5ex]{3.5em}{.4pt}}
+\newcommand{\mytoprule}{\toprule[0.5ex]}
+\newcommand{\mybottomrule}{\bottomrule[0.5ex]}
 
 % document settings
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
+\setlength{\arrayrulewidth}{1pt}
 \sbox9{\scriptsize\libertine\cmd{\ctrlshiftp \#[0--9]}}
 \newcommand{\spacebtwtables}{\newline \vspace*{1em} \newline}
 
@@ -60,43 +63,97 @@
 \scriptsize
 \bigskip
 
+% ---------- Unit Commands ---------- %
+\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
+	\mytoprule
+	Attack Ground		& \cmd{T} \hlx
+	Delete Unit			& \cmd{Delete} \hlx
+	Economic Buildings	& \cmd{B} \hlx
+	Garrison			& \cmd{G} \hlx
+	Pack				& \cmd{P} \hlx
+	Stop				& \cmd{S} \hlx
+	Unload				& \cmd{Z} \hlx
+	Unpack				& \cmd{U} \\
+	\mybottomrule
+\end{tabularx}
+\spacebtwtables
+
 % ---------- Game Commands ---------- %
 \begin{tabularx}{\linewidth}[th]{@{}PL@{}}
-\multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
-\toprule
-	Menu				& \cmd{ } \hlx
-	Pause				& \cmd{ } \hlx
-	Display Score		& \cmd{ } \\
-\bottomrule
+	\multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
+	\mytoprule
+	Chat Dialog						& \cmd{\altp T} \hlx
+	Display Game Time				& \cmd{F11} \hlx
+	Display Statistics				& \cmd{F4} \hlx
+	Flare							& \cmd{\altp F} \hlx
+	Pause Game						& \cmd{F3} \\
+	\mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Cycle Commands ---------- %
 \begin{tabularx}{\linewidth}[th]{@{}PL@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
-	\toprule
-	Go to Town Center	& \cmd{ } \hlx
-	Go to Mill			& \cmd{ } \hlx
-	Go to Barrack		& \cmd{ } \hlx
-	\bottomrule
+	\mytoprule
+	Go to Archery Range				& \cmd{\textasciitilde} \hlx
+	Go to Barracks					& \cmd{F5} \hlx
+	Go to Black Smith				& \cmd{\ctrlp S} \hlx
+	Go to Castle					& \cmd{F2} \hlx
+	Go to Dock						& \cmd{\ctrlp D} \hlx
+	Go to Last Notification			& \cmd{Middle Button} \hlx
+	Go to Mill						& \cmd{\ctrlp R} \hlx
+	Go to Next Idle Military Unit	& \cmd{Wheel Up} \hlx
+	Go to Next Idle Villager		& \cmd{Wheel Down} \hlx
+	Go to Stable					& \cmd{Tab} \hlx
+	Go to Town Center				& \cmd{Space} \\
+	\mybottomrule
 \end{tabularx}
 \spacebtwtables
 
-% ---------- Military Commands ---------- %
+% ---------- Military Units ---------- %
 \begin{tabularx}{\linewidth}[th]{@{}PL@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Military Commands}} \\
-	\toprule
-	 		& \cmd{ } \\
-	\bottomrule
+	\multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
+	\mytoprule
+	Attach Move				& \cmd{A} \hlx
+	Box Formulation			& \cmd{X} \hlx
+	Flank Formulation		& \cmd{F} \hlx
+	Line Formulation		& \cmd{Q} \hlx
+	No Attack				& \cmd{S} \hlx
+	Patrol					& \cmd{Z} \hlx
+	Staggered Formulation	& \cmd{C} \hlx
+	Stand Ground			& \cmd{N} \\
+	\mybottomrule
+\end{tabularx}
+\spacebtwtables
+
+% ---------- Town Center ---------- %
+\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
+	\mytoprule
+	Villager			& \cmd{C} \hlx
+	Ring Town Bell		& \cmd{J} \\
+	\mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Villager Build ---------- %
 \begin{tabularx}{\linewidth}[th]{@{}PL@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
-	\toprule
-	Build Barrack		& \cmd{F5} \hlx
-	\bottomrule
+	\mytoprule
+	Archery Range	& \cmd{A} \hlx
+	Barracks		& \cmd{B} \hlx
+	Blacksmith		& \cmd{S} \hlx
+	Dock			& \cmd{D} \hlx
+	Farm			& \cmd{F} \hlx
+	House			& \cmd{E} \hlx
+	Lumber Camp		& \cmd{Z} \hlx
+	Market			& \cmd{M} \hlx
+	Mill			& \cmd{R} \hlx
+	Mining Camp		& \cmd{G} \hlx
+	Palisade Wall	& \cmd{Q} \hlx
+	Town Center		& \cmd{N} \\
+	\mybottomrule
 \end{tabularx}
 \spacebtwtables
 
