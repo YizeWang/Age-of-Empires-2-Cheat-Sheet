@@ -41,8 +41,9 @@
 \renewcommand{\aboverulesep}{0pt}
 \renewcommand{\belowrulesep}{0pt}
 \newcommand{\headbf}[1]{\Large\textbf{#1}}
-\newcolumntype{P}{>{\columncolor{white}[0pt][\tabcolsep]}X}	
+\newcolumntype{P}{>{\columncolor{white}[0pt][\tabcolsep]}X}
 \newcolumntype{L}{>{\columncolor{white}[\tabcolsep][0pt]}m{\wd9}}
+\newcolumntype{R}{>{\columncolor{white}[\tabcolsep][0pt]}m{16em}}
 
 \begin{document}
 \begin{multicols*}{4}
@@ -145,13 +146,16 @@
 	Archery Range	& \cmd{A} \hlx
 	Barracks		& \cmd{B} \hlx
 	Blacksmith		& \cmd{S} \hlx
+	Castle			& \cmd{V} \hlx
 	Dock			& \cmd{D} \hlx
 	Farm			& \cmd{F} \hlx
+	Gate			& \cmd{X} \hlx
 	House			& \cmd{E} \hlx
 	Lumber Camp		& \cmd{Z} \hlx
 	Market			& \cmd{M} \hlx
 	Mill			& \cmd{R} \hlx
 	Mining Camp		& \cmd{G} \hlx
+	Monastery		& \cmd{Y} \hlx
 	Palisade Wall	& \cmd{Q} \hlx
 	Stable			& \cmd{T} \hlx
 	Siege Workshop	& \cmd{Z} \hlx
@@ -161,31 +165,34 @@
 \spacebtwtables
 
 % ---------- 28+2 Fast Castle ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}LP@{}}
+\begin{tabularx}{\linewidth}[th]{@{}PR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{28+2 Fast Castle}} \\
 	\mytoprule
 	\cmd{P2-4}				& House and Sheep \hlx
 	\cmd{P5-7}				& Sheep \hlx
 	\cmd{P8}				& Lumber Camp \hlx
 	\cmd{P9-11}				& Lumber \hlx
-	\cmd{P12}				& Lure Bore (Loom) \hlx
+	\cmd{P12}				& Lure Bore \\
+							& Loom \hlx
 	\cmd{P13}				& House and Berries \hlx
 	\cmd{P14}				& Mill and Berries \hlx
 	\cmd{P15}				& Berries \hlx
-	\cmd{P16}				& Lure Bore \hlx
-	\cmd{P17}				& Berries (Shift 2 from Sheep to Farm) \hlx
+	\cmd{P16}				& Lure Bore \\
+							& 2 Sheep $\rightarrow$ Farm \hlx
+	\cmd{P17}				& Berries \hlx
 	\cmd{P18}				& House and Lumber \hlx
 	\cmd{P19}				& Second Lumber Camp \hlx
-	\cmd{P20-22}			& Lumber (Shift 6 from Bore to Sheep) \hlx
+	\cmd{P20-22}			& Lumber \hlx
 	\cmd{P23}				& House and Farm \hlx
 	\cmd{P24-25}			& Farm \hlx
 	\cmd{P26}				& Mining Camp \hlx
 	\cmd{P27-28}			& Mine Gold \hlx
-	\cmd{Click Feudal Age}	&  Shift 6 from Sheep to 5 Farm and 1 Lumber  \hlx
-	\cmd{Feudal Age}		& 2 Build Market and 1 Build Blacksmith \hlx
-	\cmd{P29-30}			&  Mine Gold (If Go Knights) \\
-							&  Lumber (If Boom) \hlx
-	\cmd{Click Castle Age}	&  Research Lumber and Farm Techniques \hlx
+	\cmd{Click Feudal Age}	& 9W 6S 5F 4B 3G \\
+							& 6 Sheep $\rightarrow$ 5 Farm 1 Wood \hlx
+	\cmd{Feudal Age}		& 2 $\rightarrow$ Market and 1 $\rightarrow$ Blacksmith \hlx
+	\cmd{P29-30}			& Mine Gold (If Go Knights) \\
+							& Lumber (If Boom) \hlx
+	\cmd{Click Castle Age}	& Lumber and Farm Techniques \\
 	\mybottomrule
 \end{tabularx}
 \spacebtwtables
