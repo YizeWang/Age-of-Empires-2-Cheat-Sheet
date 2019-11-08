@@ -1,2 +1,3 @@
-# Age of Empires 2 Cheatsheet
+# Age of Empires 2 (DE) Cheatsheet
 
+Since the default keyboard shortcuts are either hard to remember or too far to press, I rearranged some hotkeys based on the locations and names. The key idea is to make the frequently-used hotkeys easily reachable with the left hand or use the initial letter of the name. Further, I include some strategies (build orders) to help beginners get a quick and well-organized start.
