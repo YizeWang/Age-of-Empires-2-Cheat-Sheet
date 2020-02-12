@@ -16,3 +16,4 @@ Since the default keyboard shortcuts are either hard to remember or too far to p
 
 - 28+2 Fast Castle
 - 22 Scout Rush
+- 28+2 Fast Castle with Unique Unit
