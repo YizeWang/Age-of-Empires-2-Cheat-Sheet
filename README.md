@@ -14,6 +14,17 @@ Since the default keyboard shortcuts are either hard to remember or too far to p
 
 # Strategies
 
-- 28+2 Fast Castle
+- 26+2 Arena Fast Castle
 - 22 Scout Rush
 - 28+2 Fast Castle with Unique Unit
+- 27+2 Fast Castle - Boom
+- 28+2 Fast Castle - Knights
+
+# Reference
+
+- [Keyboard Shortcuts by Meng]: https://www.bilibili.com/video/av22359198
+
+- [Build Orders by Cicero]: https://www.aoezone.net/threads/interactive-build-order-guide.150157/
+
+  
+
