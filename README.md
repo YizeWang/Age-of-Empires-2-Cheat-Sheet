@@ -10,21 +10,28 @@ Since the default keyboard shortcuts are either hard to remember or too far to p
 - Chat Options
 - Military Units Commands
 - Town Center Commands
-- Villager Build
+- Dock Commands
+- Villager Build Commands
+- Taunts
 
 # Strategies
 
-- 26+2 Arena Fast Castle
 - 22 Scout Rush
-- 28+2 Fast Castle with Unique Unit
-- 27+2 Fast Castle - Boom
+- 28+2 Fast Castle Unit
+- 27+2 Fast Castle Boom
+- 19 Korean Towers
+- 26+2 Arena Fast Castle
+- 25+2 Siege Monk Rush
+- 19 Mongol Scout Rush
 - 28+2 Fast Castle - Knights
+- 23 Archers
+- 22 Men-at-Arms - Towers
+- 28 Drush - Archers
 
 # Reference
 
 - [Keyboard Shortcuts by Meng]: https://www.bilibili.com/video/av22359198
 
-- [Build Orders by Cicero]: https://www.aoezone.net/threads/interactive-build-order-guide.150157/
+- [Build Orders by Cicero]: https://www.aoezone.net/threads/interactive-build-order-guide.150157
 
-  
-
+- [St4rk Tutorials]: https://www.youtube.com/channel/UCoX5HqFM4qEGJYfj0TEOIpg
