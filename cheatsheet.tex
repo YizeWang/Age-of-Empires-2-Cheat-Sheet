@@ -1,26 +1,21 @@
 \documentclass[a4paper]{article}
 
 % import packages
-\usepackage[T1]{fontenc}
-\usepackage{libertine}     
-\usepackage[libertine]{newtxmath}
-\usepackage[margin=1cm,landscape]{geometry}
-\usepackage[protrusion=true,expansion=true]{microtype}
-\usepackage{mdframed}
-\usepackage[dvipsnames,table]{xcolor}
-\usepackage{multicol,booktabs,tabularx}
+\usepackage{multicol} % multiple column
+\usepackage{booktabs} % table quality improvement
+\usepackage{tabularx} % tabular package
+\usepackage{mdframed} % for title
+\usepackage{libertine} % libertine font
+\usepackage[T1]{fontenc} % font encoding
+\usepackage[dvipsnames, table]{xcolor} % color manager
+\usepackage[margin=1cm, landscape]{geometry} % document layout
 
 % define new commands for shortcuts
-\newcommand{\hlx}{\\\midrule[0.3ex]}
-\newcommand{\cmd}[1]{\textbf{#1}}
-\newcommand{\tbl}{\textbackslash}
-\newcommand{\ctrlp}{Ctrl$+$}
-\newcommand{\ctrlshiftp}{Ctrl$+$Shift$+$}
-\newcommand{\ctrlaltp}{Ctrl$+$Alt$+$}
 \newcommand{\altp}{Alt$+$}
+\newcommand{\ctrlp}{Ctrl$+$}
 \newcommand{\shiftp}{Shift$+$}
-\newcommand{\altshiftp}{Alt$+$Shift$+$}
-\newcommand*{\altcmd}{\hspace*{1em}\rule[.5ex]{3.5em}{.4pt}}
+\newcommand{\cmd}[1]{\textbf{#1}}
+\newcommand{\hlx}{\\ \midrule[0.3ex]}
 \newcommand{\mytoprule}{\toprule[0.5ex]}
 \newcommand{\mybottomrule}{\bottomrule[0.5ex]}
 
@@ -28,21 +23,19 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\arrayrulewidth}{1pt}
-\sbox9{\scriptsize\libertine\cmd{\ctrlshiftp \#[0--9]}}
 \newcommand{\spacebtwtables}{\newline \vspace*{1em} \newline}
 
 % title settings
-\global\mdfdefinestyle{mystyle}{linecolor=gray,linewidth=1pt,leftmargin=0mm,rightmargin=0mm,skipbelow=0mm,skipabove=0mm}
+\global\mdfdefinestyle{mystyle}{linecolor=gray, linewidth=1pt, leftmargin=0mm, rightmargin=0mm, skipbelow=0mm, skipabove=0mm}
 
 % table settings
 \renewcommand\arraystretch{1.2}
-\definecolor{impt}{HTML}{E6E7E9}
 \renewcommand{\aboverulesep}{0pt}
 \renewcommand{\belowrulesep}{0pt}
 \newcommand{\headbf}[1]{\Large\textbf{#1}}
-\newcolumntype{P}{>{\columncolor{white}[0pt][\tabcolsep]}X}
-\newcolumntype{L}{>{\columncolor{white}[\tabcolsep][0pt]}m{\wd9}}
-\newcolumntype{R}{>{\columncolor{white}[\tabcolsep][0pt]}m{16em}}
+\newcolumntype{L}{>{\columncolor{white}[0pt][\tabcolsep]}X}
+\newcolumntype{R}{>{\columncolor{white}[\tabcolsep][0pt]}m{10em}}
+\newcolumntype{M}{>{\columncolor{white}[\tabcolsep][0pt]}m{18em}}
 
 \begin{document}
 \begin{multicols*}{4}
@@ -64,13 +57,12 @@
 \bigskip
 
 % ---------- Unit Commands ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
 	\mytoprule
 	Attack Ground				& \cmd{T} \hlx
 	Delete All Selected Unit	& \cmd{\shiftp Delete} \hlx
 	Economic Buildings			& \cmd{B} \hlx
-	Military Buildings			& \cmd{V} \hlx
 	Garrison					& \cmd{G} \hlx
 	Ungarrison					& \cmd{G} \hlx
 	Set Gather Point			& \cmd{A} \hlx
@@ -82,7 +74,7 @@
 \spacebtwtables
 
 % ---------- Game Commands ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
 	\mytoprule
 	Chat Dialog				& \cmd{\altp T} \hlx
@@ -96,7 +88,7 @@
 \spacebtwtables
 
 % ---------- Cycle Commands ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
 	\mytoprule
 	Go to Archery Range				& \cmd{\textasciitilde} \hlx
@@ -107,10 +99,10 @@
 	Go to Lumber Camp				& \cmd{\ctrlp Z} \hlx
 	Go to Mining Camp				& \cmd{\ctrlp G} \hlx
 	Go to Siege Workshop			& \cmd{\ctrlp C} \hlx
-	Go to Last Notification			& \cmd{Middle Button} \hlx
+	Go to Last Notification			& \cmd{Middle-Button} \hlx
 	Go to Mill						& \cmd{\ctrlp R} \hlx
-	Go to Next Idle Military Unit	& \cmd{Wheel Up} \hlx
-	Go to Next Idle Villager		& \cmd{Wheel Down} \hlx
+	Go to Next Idle Military Unit	& \cmd{Wheel-Up} \hlx
+	Go to Next Idle Villager		& \cmd{Wheel-Down} \hlx
 	Go to Stable					& \cmd{Tab} \hlx
 	Go to Town Center				& \cmd{Space} \\
 	\mybottomrule
@@ -118,7 +110,7 @@
 \spacebtwtables
 
 % ---------- Chat Options ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Chat Options}} \\
 	\mytoprule
 	Talk to All				& \cmd{* + Words} \hlx
@@ -131,7 +123,7 @@
 \columnbreak
 
 % ---------- Military Units ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
 	\mytoprule
 	Attach Move				& \cmd{A} \hlx
@@ -147,7 +139,7 @@
 \spacebtwtables
 
 % ---------- Town Center ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
 	\mytoprule
 	Villager			& \cmd{C} \hlx
@@ -159,7 +151,7 @@
 \spacebtwtables
 
 % ---------- Dock ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Dock}} \\
 	\mytoprule
 	Fishing Ship		& \cmd{F} \hlx
@@ -172,7 +164,7 @@
 \spacebtwtables
 
 % ---------- Villager Build ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
 	\mytoprule
 	Rotate Gate		& \cmd{\ctrlp Wheel} \hlx
@@ -203,7 +195,7 @@
 \columnbreak
 
 % ---------- Taunts ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
 	\mytoprule
 	Attack Player i	& \cmd{$\backslash$6i} \hlx
@@ -217,7 +209,7 @@
 \spacebtwtables
 
 % ---------- Miscellaneous ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}LP@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
 	\mytoprule
 	Petard Damage			& +900 vs Wall and Gate / +500 vs Building \\
@@ -228,7 +220,7 @@
 \spacebtwtables
 
 % ---------- 22 Scout Rush ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{22 Scout Rush}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
@@ -268,7 +260,7 @@ Classic Fast Build - Scouts can gain early map control, do early damage before w
 \columnbreak
 
 % ---------- 28+2 Fast Castle - Unique Unit ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{28+2 Fast Castle Unit}} \\
 	\mytoprule
 	6 on Sheep							& 6S \hlx
@@ -290,7 +282,7 @@ Fast Castle and have the stone to build one when you reach it. Popular with pock
 \spacebtwtables
 
 % ---------- 27+2 Fast Castle - Boom ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{27+2 Fast Castle Boom}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
@@ -312,7 +304,7 @@ Place two extra town centers upon hitting Castle Age and maintain production fro
 \spacebtwtables
 
 % ---------- 19 Korean Towers ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{19 Korean Towers}} \\
 	\mytoprule
 	6 on Sheep											& 6S \hlx
@@ -332,7 +324,7 @@ Towers are the only thing the Koreans are good at, so it's worth knowing a build
 \columnbreak
 
 % ---------- 26+2 Arena Fast Castle ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{26+2 Arena Fast Castle}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
@@ -352,7 +344,7 @@ Towers are the only thing the Koreans are good at, so it's worth knowing a build
 \spacebtwtables
 
 % ---------- 25+2 Siege Monk Rush ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{25+2 Siege Monk Rush}} \\
 	\mytoprule
 	6 on Sheep							& 6S \hlx
@@ -376,7 +368,7 @@ Towers are the only thing the Koreans are good at, so it's worth knowing a build
 \spacebtwtables
 
 % ---------- 22 Men-at-Arms - Towers ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{22 Men-at-Arms - Towers}} \\
 	\mytoprule
 	6 on Sheep											& 6S \hlx
@@ -399,7 +391,7 @@ Towers are the only thing the Koreans are good at, so it's worth knowing a build
 \columnbreak
 
 % ---------- 28 Drush - Archers ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{28 Drush - Archers}} \\
 	\mytoprule
 	6 on Sheep							& 6S \hlx
@@ -421,7 +413,7 @@ Three militia created in Dark Age are used to delay the opponent. This is a way 
 \spacebtwtables
 
 % ---------- 23 Archers ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{23 Archers}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
@@ -444,7 +436,7 @@ The aim of this build is to keep the ranges working constantly. It is a slower b
 \spacebtwtables
 
 % ---------- 19 Mongol Scout Rush ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{19 Mongol Scout Rush}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
@@ -453,8 +445,7 @@ The aim of this build is to keep the ranges working constantly. It is a slower b
 	4 on Berries				& 7S 4B 3W \hlx
 	$\uparrow$ 11 on Sheep		& 11S 4B 3W \hlx
 	\cmd{Click Feudal Age}		& \hlx
-	5 Sheep to Wood (4+4)		& 6S 4B 8W \hlx
-	Build Barracks (60\%)		& \\
+	5 Sheep to Wood (4+4)		& 6S 4B 8W \\
 	\mybottomrule
 \end{tabularx}
 
@@ -462,7 +453,7 @@ The aim of this build is to keep the ranges working constantly. It is a slower b
 \columnbreak
 
 % ---------- 28+2 Fast Castle - Knights ---------- %
-\begin{tabularx}{\linewidth}[th]{@{}PL@{}}
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{28+2 Fast Castle - Knights}} \\
 	\mytoprule
 	6 on Sheep					& 6S \hlx
