@@ -30,8 +30,8 @@ Since the default keyboard shortcuts are either hard to remember or too far to p
 
 # Reference
 
-- [Keyboard Shortcuts by Meng]: https://www.bilibili.com/video/av22359198
+- Keyboard Shortcuts by Meng: https://www.bilibili.com/video/av22359198
 
-- [Build Orders by Cicero]: https://www.aoezone.net/threads/interactive-build-order-guide.150157
+- Build Orders by Cicero: https://www.aoezone.net/threads/interactive-build-order-guide.150157
 
-- [St4rk Tutorials]: https://www.youtube.com/channel/UCoX5HqFM4qEGJYfj0TEOIpg
+- St4rk Tutorials: https://www.youtube.com/channel/UCoX5HqFM4qEGJYfj0TEOIpg
