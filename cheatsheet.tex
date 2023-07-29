@@ -1,16 +1,16 @@
 \documentclass[a4paper]{article}
 
-% import packages
-\usepackage{multicol} % multiple column
-\usepackage{booktabs} % table quality improvement
-\usepackage{tabularx} % tabular package
-\usepackage{mdframed} % for title
-\usepackage{libertine} % libertine font
-\usepackage[T1]{fontenc} % font encoding
-\usepackage[table]{xcolor} % color manager
+% Import packages.
+\usepackage{multicol}                        % multiple column
+\usepackage{booktabs}                        % table quality improvement
+\usepackage{tabularx}                        % tabular package
+\usepackage{mdframed}                        % for title
+\usepackage{libertine}                       % libertine font
+\usepackage[T1]{fontenc}                     % font encoding
+\usepackage[table]{xcolor}                   % color manager
 \usepackage[margin=1cm, landscape]{geometry} % document layout
 
-% define new commands for shortcuts
+% Define new commands for shortcuts.
 \newcommand{\altp}{Alt$+$}
 \newcommand{\ctrlp}{Ctrl$+$}
 \newcommand{\shiftp}{Shift$+$}
@@ -19,16 +19,16 @@
 \newcommand{\mytoprule}{\toprule[0.5ex]}
 \newcommand{\mybottomrule}{\bottomrule[0.5ex]}
 
-% document settings
+% Set document style.
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\arrayrulewidth}{1pt}
 \newcommand{\spacebtwtables}{\newline \vspace*{1em} \newline}
 
-% title settings
-\mdfdefinestyle{mystyle}{linecolor=gray, linewidth=1pt, leftmargin=0mm, rightmargin=0mm, skipbelow=0mm, skipabove=0mm}
+% Set title style.
+\mdfdefinestyle{mystyle}{linecolor=gray, linewidth=1pt, leftmargin=0mm, rightmargin=0mm, skipbelow=0mm,skipabove=0mm}
 
-% table settings
+% Set table style.
 \renewcommand\arraystretch{1.2}
 \renewcommand{\aboverulesep}{0pt}
 \renewcommand{\belowrulesep}{0pt}
@@ -39,84 +39,82 @@
 
 \begin{document}
 \begin{multicols*}{4}
-	
+    
 % ---------- Title ---------- %
 \begin{mdframed}[style=mystyle]
 \begin{center}
-	\fontfamily{pnc} \selectfont
-	\large\scshape
-	Age of Empires 2 \\
-	Strategies \\
-	\bigskip
-	\footnotesize Author: Yize Wang \\
-	\footnotesize Last Updated: \today
+    \fontfamily{pnc} \selectfont
+    \large\scshape
+    Age of Empires 2 \\
+    Reference \\
+    \bigskip
+    \footnotesize Author: Yize Wang \\
+    \footnotesize Last Updated: \today
 \end{center}
 \end{mdframed}
-
 \scriptsize
 \bigskip
 
 % ---------- Unit Commands ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
-	\mytoprule
-	Attack Ground				& \cmd{T} \hlx
-	Delete All Selected Unit	& \cmd{\shiftp Delete} \hlx
-	Economic Buildings			& \cmd{B} \hlx
-	Garrison					& \cmd{G} \hlx
-	Ungarrison					& \cmd{G} \hlx
-	Set Gather Point			& \cmd{A} \hlx
-	Pack						& \cmd{P} \hlx
-	Stop						& \cmd{S} \hlx
-	Unload						& \cmd{G} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
+    \mytoprule
+    Economic Buildings            & \cmd{B} \hlx
+    Set Gather Point              & \cmd{A} \hlx
+    Garrison                      & \cmd{G} \hlx
+    Ungarrison                    & \cmd{G} \hlx
+    Pack                          & \cmd{G} \hlx
+    Unload                        & \cmd{G} \hlx
+    Stop                          & \cmd{S} \hlx
+    Delete All Selected Unit      & \cmd{\shiftp Delete} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Game Commands ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
-	\mytoprule
-	Chat Dialog				& \cmd{\altp T} \hlx
-	Diplomacy				& \cmd{\altp D} \hlx
-	Display Game Time		& \cmd{F11} \hlx
-	Display Statistics		& \cmd{F4} \hlx
-	Flare					& \cmd{\altp F} \hlx
-	Pause Game				& \cmd{F3} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
+    \mytoprule
+    Pause Game                 & \cmd{F3} \hlx
+    Display Statistics         & \cmd{F4} \hlx
+    Display Game Time          & \cmd{F11} \hlx
+    Chat Dialog                & \cmd{\altp T} \hlx
+    Diplomacy                  & \cmd{\altp D} \hlx
+    Flare                      & \cmd{\altp F} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Cycle Commands ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
-	\mytoprule
-	Go to Archery Range				& \cmd{\textasciitilde} \hlx
-	Go to Barracks					& \cmd{\ctrlp B} \hlx
-	Go to Black Smith				& \cmd{\ctrlp S} \hlx
-	Go to Castle					& \cmd{\ctrlp V} \hlx
-	Go to Dock						& \cmd{\ctrlp D} \hlx
-	Go to Lumber Camp				& \cmd{\ctrlp Z} \hlx
-	Go to Mining Camp				& \cmd{\ctrlp G} \hlx
-	Go to Siege Workshop			& \cmd{\ctrlp C} \hlx
-	Go to Last Notification			& \cmd{Middle-Button} \hlx
-	Go to Mill						& \cmd{\ctrlp R} \hlx
-	Go to Next Idle Military Unit	& \cmd{Wheel-Up} \hlx
-	Go to Next Idle Villager		& \cmd{Wheel-Down} \hlx
-	Go to Stable					& \cmd{Tab} \hlx
-	Go to Town Center				& \cmd{Space} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
+    \mytoprule
+    Go to Archery Range                & \cmd{\textasciitilde} \hlx
+    Go to Stable                       & \cmd{Tab} \hlx
+    Go to Town Center                  & \cmd{Space} \hlx
+    Go to Next Idle Military Unit      & \cmd{Wheel-Up} \hlx
+    Go to Last Notification            & \cmd{Middle-Button} \hlx
+    Go to Next Idle Villager           & \cmd{Wheel-Down} \hlx
+    Go to Barracks                     & \cmd{\ctrlp B} \hlx
+    Go to Black Smith                  & \cmd{\ctrlp S} \hlx
+    Go to Castle                       & \cmd{\ctrlp V} \hlx
+    Go to Dock                         & \cmd{\ctrlp D} \hlx
+    Go to Lumber Camp                  & \cmd{\ctrlp Z} \hlx
+    Go to Mining Camp                  & \cmd{\ctrlp G} \hlx
+    Go to Siege Workshop               & \cmd{\ctrlp C} \hlx
+    Go to Mill                         & \cmd{\ctrlp R} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Chat Options ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Chat Options}} \\
-	\mytoprule
-	Talk to All				& \cmd{* + Words} \hlx
-	Talk to Enemy			& \cmd{\# + Words} \hlx
-	Talk to Allies			& \cmd{; + Words} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Chat Options}} \\
+    \mytoprule
+    Talk to All                & \cmd{* + Words} \hlx
+    Talk to Enemy              & \cmd{\# + Words} \hlx
+    Talk to Allies             & \cmd{; + Words} \\
+    \mybottomrule
 \end{tabularx}
 
 \vfill\null
@@ -124,71 +122,73 @@
 
 % ---------- Military Units ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
-	\mytoprule
-	Attach Move				& \cmd{A} \hlx
-	Box Formulation			& \cmd{X} \hlx
-	Flank Formulation		& \cmd{F} \hlx
-	Line Formulation		& \cmd{Q} \hlx
-	No Attack				& \cmd{S} \hlx
-	Patrol					& \cmd{Z} \hlx
-	Staggered Formulation	& \cmd{C} \hlx
-	Stand Ground			& \cmd{N} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
+    \mytoprule
+    No Attack                  & \cmd{S} \hlx
+    Attack Ground              & \cmd{T} \hlx
+    Box Formulation            & \cmd{X} \hlx
+    Flank Formulation          & \cmd{F} \hlx
+    Line Formulation           & \cmd{Q} \hlx
+    Staggered Formulation      & \cmd{C} \hlx
+    Attach Move                & \cmd{A} \hlx
+    Stand Ground               & \cmd{N} \hlx 
+    Patrol                     & \cmd{Z} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Town Center ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
-	\mytoprule
-	Villager			& \cmd{C} \hlx
-	Go back to Work		& \cmd{W} \hlx
-	Research Loom		& \cmd{S} \hlx
-	Age up				& \cmd{Z} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
+    \mytoprule
+    Villager                & \cmd{C} \hlx
+    Go back to Work         & \cmd{W} \hlx
+    Research Loom           & \cmd{S} \hlx
+    Age up                  & \cmd{Z} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Dock ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Dock}} \\
-	\mytoprule
-	Fishing Ship		& \cmd{F} \hlx
-	Galley				& \cmd{G} \hlx
-	Transport Ship		& \cmd{T} \hlx
-	Fire Galley			& \cmd{R} \hlx
-	Demolition Raft		& \cmd{D} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Dock}} \\
+    \mytoprule
+    Fishing Ship           & \cmd{F} \hlx
+    Galley                 & \cmd{G} \hlx
+    Transport Ship         & \cmd{T} \hlx
+    Fire Galley            & \cmd{R} \hlx
+    Demolition Raft        & \cmd{D} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Villager Build ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
-	\mytoprule
-	Rotate Gate		& \cmd{\ctrlp Wheel} \hlx
-	Archery Range	& \cmd{A} \hlx
-	Barracks		& \cmd{B} \hlx
-	Blacksmith		& \cmd{S} \hlx
-	Castle			& \cmd{V} \hlx
-	Dock			& \cmd{D} \hlx
-	Farm			& \cmd{F} \hlx
-	Gate			& \cmd{X} \hlx
-	House			& \cmd{E} \hlx
-	Lumber Camp		& \cmd{Z} \hlx
-	Market			& \cmd{M} \hlx
-	Mill			& \cmd{R} \hlx
-	Mining Camp		& \cmd{G} \hlx
-	Monastery		& \cmd{Y} \hlx
-	Outpost			& \cmd{O} \hlx
-	Palisade Wall	& \cmd{Q} \hlx
-	Palisade Gate	& \cmd{H} \hlx
-	Stable			& \cmd{T} \hlx
-	Siege Workshop	& \cmd{C} \hlx
-	Town Center		& \cmd{N} \hlx
-	Watch Tower		& \cmd{J} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
+    \mytoprule
+    Rotate Gate        & \cmd{\ctrlp Wheel} \hlx
+    Archery Range      & \cmd{A} \hlx
+    Barracks           & \cmd{B} \hlx
+    Blacksmith         & \cmd{S} \hlx
+    Castle             & \cmd{V} \hlx
+    Dock               & \cmd{D} \hlx
+    Farm               & \cmd{F} \hlx
+    House              & \cmd{E} \hlx
+    Lumber Camp        & \cmd{Z} \hlx
+    Market             & \cmd{M} \hlx
+    Mill               & \cmd{R} \hlx
+    Mining Camp        & \cmd{G} \hlx
+    Monastery          & \cmd{Y} \hlx
+    Outpost            & \cmd{O} \hlx
+    Palisade Gate      & \cmd{X} \hlx
+    Palisade Wall      & \cmd{Q} \hlx
+    Stable             & \cmd{T} \hlx
+    Siege Workshop     & \cmd{C} \hlx
+    Stone Gate         & \cmd{H} \hlx
+    Stone Wall         & \cmd{W} \hlx
+    Town Center        & \cmd{N} \hlx
+    Watch Tower        & \cmd{J} \\
+    \mybottomrule
 \end{tabularx}
 
 \vfill\null
@@ -196,27 +196,27 @@
 
 % ---------- Taunts ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
-	\mytoprule
-	Attack Player i	& \cmd{$\backslash$6i} \hlx
-	Delete Object	& \cmd{$\backslash$69} \hlx
-	You Resign		& \cmd{$\backslash$105} \hlx
-	Attack Location	& \cmd{$\backslash$47} \hlx
-	Raiding Party	& \cmd{$\backslash$35} \hlx
-	Build Market	& \cmd{$\backslash$52} \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
+    \mytoprule
+    Attack Player 1    & \cmd{$\backslash$61} \hlx
+    Delete Object      & \cmd{$\backslash$69} \hlx
+    You Resign         & \cmd{$\backslash$105} \hlx
+    Attack Location    & \cmd{$\backslash$47} \hlx
+    Raiding Party      & \cmd{$\backslash$35} \hlx
+    Build Market       & \cmd{$\backslash$52} \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
 % ---------- Miscellaneous ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
-	\mytoprule
-	Petard Damage			& +900 vs Wall and Gate / +500 vs Building \\
-	& +100 vs Castle / +60 vs Siege Weapon \hlx
-	Build Speed				& $3t/(n+2)$ with Single Villager Time $t$ \hlx
-	Age up Time				& Feudal-130s Castle-160s Imperial-190s \\
-	\mybottomrule
+    \multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
+    \mytoprule
+    Petard Damage              & +900 vs Wall and Gate, +500 vs Building \\
+                               & +100 vs Castle, +60 vs Siege Weapon \hlx
+    Build Speed                & $3t/(n+2)$ with Single Villager Time $t$ \hlx
+    Age up Time                & Feudal 130s, Castle 160s, Imperial 190s \\
+    \mybottomrule
 \end{tabularx}
 \spacebtwtables
 
@@ -224,259 +224,180 @@
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{22 Scout Rush}} \\
 	\mytoprule
-	6 on Sheep					& 6S \hlx
-	3 on Wood					& 6S 3W \hlx
-	1 Lure Boar					& 7S 3W \hlx
-	1 on Sheep					& 8S 3W \hlx
-	4 on Berries				& 8S 4B 3W \hlx
-	2 to Farms / +2 on Boar		& 8S 4B 2F 3W \hlx
-	4 on Wood					& 8S 4B 2F 7W \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	3 Sheep to Wood (5+5)		& 5S 4B 2F 10W \hlx
-	Build Barracks (60\%)		& \hlx
-	\cmd{Feudal Age}			& \hlx
-	Build Stable				& \hlx
-	$\uparrow$ 14 on Farms		& 4B 14F 10W \hlx
-	$\rightarrow$ \cmd{Archer}	& \hlx
-	Build 2 Ranges / Blacksmith	& \hlx
-	2 Berries to Gold			& 2B 14F 10W 2G \hlx
-	$\uparrow$ 10 on Gold		& 2B 14F 10W 10G \hlx
-	$\uparrow$ 18 on Farms		& 2B 18F 10W 10G \hlx
-	$\rightarrow$ \cmd{Skirm}	& \hlx
-	Build 1 Range / Blacksmith	& \hlx
-	2 on Wood (6+6)				& 4B 14F 12W \hlx
-	2 Berries to Gold			& 2B 14F 12W 2G \hlx
-	2 on Gold					& 2B 14F 12W 4G \hlx
-	4 on Farms					& 2B 18F 12W 4G \hlx
-	$\rightarrow$ \cmd{Castle}	& \hlx
-	Build Blacksmith			& \hlx
-	2 Berries to Gold			& 2B 14F 10W 2G \hlx
-	$\uparrow$ 5 Gold			& 2B 14F 10W 5G \hlx
-	2 on Farms					& 2B 16F 10W 5G \\
+	6 on Sheep                                & 6S \hlx
+	3 on Wood                                 & 6S 3W \hlx
+	1 Lure Boar                               & 7S 3W \hlx
+	1 on Sheep                                & 8S 3W \hlx
+	4 on Berry                                & 8S 4B 3W \hlx
+	2 on Boar, 2 to Farm                      & 8S 4B 2F 3W \hlx
+	4 on Wood                                 & 8S 4B 2F 7W \hlx
+	Research Loom                             & \hlx
+	\cmd{Click Feudal Age}                    & \hlx
+	3 Sheep to Wood (5+5)                     & 5S 4B 2F 10W \hlx
+	Build Barracks (60\%)                     & \hlx
+	\cmd{Feudal Age}                          & \hlx
+	Build Stable, Make Scouts                 & \hlx
+	Research Axe, Horse Collar                & \hlx
+	$\uparrow$ 14 on Farm                     & 4B 14F 10W \hlx
+	2 Berry to Farm                           & 2B 16F 10W 2G \hlx
+	5 on Gold                                 & 2B 16F 10W 5G \hlx
+	Research Wheelbarrow                      & \hlx
+	Build Blacksmith                          & \\
 	\mybottomrule
 \end{tabularx}
-Classic Fast Build - Scouts can gain early map control, do early damage before walls go up, and can effectively kill off small groups of archers/skirmishers. They can also buy time for a player to transition into archery range.
+\textbf{Benchmarks}: \textit{8:10} Feudal + 22P, \textit{13:45} 6 Scouts, \textit{16:55} Click Castle \\
 
 \vfill\null
 \columnbreak
-
-% ---------- 28+2 Fast Castle - Unique Unit ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{28+2 Fast Castle Unit}} \\
-	\mytoprule
-	6 on Sheep							& 6S \hlx
-	4 on Wood							& 6S 4W \hlx
-	1 Lure Boar							& 7S 4W \hlx
-	5 on Berries						& 7S 5B 4W \hlx
-	+2 on Boar / 2 to Farms				& 7S 5B 2F 4W \hlx
-	$\uparrow$ 9 on Wood (5+4)			& 7S 5B 2F 9W \hlx
-	2 on Gold							& 7S 5B 2F 9W 2G \hlx
-	2 on Stone							& 7S 5B 2F 9W 2G 2S\hlx
-	\cmd{Click Feudal Age}				& \hlx
-	$\uparrow$ 7 Farms / 2 on Stone		& 5B 7F 9W 2G 4S \hlx
-	\cmd{Feudal Age}					& \hlx
-	Build Blacksmith / Market			& \hlx
-	2 on Stone							& 5B 7F 9W 2G 6S \\
-	\mybottomrule
-\end{tabularx}
-Fast Castle and have the stone to build one when you reach it. Popular with pocket civilizations like Burmese/Mayans/Spanish. 
-\spacebtwtables
-
-% ---------- 27+2 Mayans FC - Boom ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{27+2 Mayans FC - Boom}} \\
-	\mytoprule
-	6 on Sheep					& 6S \hlx
-	4 on Wood					& 6S 4W \hlx
-	1 Lure Boar					& 7S 4W \hlx
-	4 on Berries				& 7S 4B 4W \hlx
-	+4 on Boar \& 5 to Farms	& 6S 4B 5F 4W \hlx
-	4 on Wood					& 6S 4B 5F 8W \hlx
-	3 on Gold					& 6S 4B 5F 8W 3G \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	3 to Farms \& 3 to Wood		& 8F 4B 11W 3G \hlx
-	\cmd{Feudal Age}			& \hlx
-	Build Blacksmith / Market	& \hlx
-	1 on Gold \& 1 on Wood		& 8F 4B 12W 4G \hlx
-	\cmd{Click Castle Age}		& \\
-	\mybottomrule
-\end{tabularx}
-Place two extra town centers upon hitting Castle Age and maintain production from all three. In Castle Age, set all gather points to wood, and build farms as soon as wood becomes available.
-\spacebtwtables
-
-% ---------- 19 Korean Towers ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{19 Korean Towers}} \\
-	\mytoprule
-	6 on Sheep											& 6S \hlx
-	2 on Wood											& 6S 2W \hlx
-	1 Lure Boar	/ +2 on Sheep							& 9S 2W \hlx
-	2 on Berries										& 9S 2B 2W \hlx
-	$\uparrow$ 14 on Sheep								& 14S 2B 2W \hlx
-	\cmd{Click Feudal Age}								& \hlx
-	2 to Stone / 2 to Wood / 6 Forward					& 4S 2B 4W 2S \hlx
-	\cmd{Feudal Age}									& \hlx
-	$\uparrow$ 5 on Stone / 2 on Berries / 2 to Farm	& 4B 2F 4W 5S \\
-	\mybottomrule
-\end{tabularx}
-Towers are the only thing the Koreans are good at, so it's worth knowing a build order for them. Can be used with other civilizations but will be less effective.
-
-\vfill\null
-\columnbreak
-
-% ---------- 26+2 Arena Fast Castle ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{26+2 Arena Fast Castle}} \\
-	\mytoprule
-	6 on Sheep					& 6S \hlx
-	4 on Wood					& 6S 4W \hlx
-	1 Lure Boar					& 7S 4W \hlx
-	5 on Berries				& 7S 5B 4W \hlx
-	+2 on Boar / 2 to Farms		& 7S 5B 2F 4W \hlx
-	$\uparrow$ 8 on Wood*		& 7S 5B 2F 8W \hlx
-	3 Sheep to Farms			& 4S 5B 5F 8W \hlx
-	3 on Gold					& 4S 5B 5F 8W 3G \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	Build Blacksmith / Market	& \hlx
-	2 on Wood					& 4S 5B 5F 10W 3G \\
-	\mybottomrule
-\end{tabularx}
-*for fast castle with stable or range, advance with 1 more lumberjack
-\spacebtwtables
-
-% ---------- 25+2 Siege Monk Rush ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{25+2 Siege Monk Rush}} \\
-	\mytoprule
-	6 on Sheep							& 6S \hlx
-	4 on Wood							& 6S 4W \hlx
-	1 Lure Boar							& 7S 4W \hlx
-	1 on Sheep							& 8S 4W \hlx
-	5 on Berries						& 8S 5B 4W \hlx
-	2 on Wood							& 8S 5B 6W \hlx
-	2 Sheep to Farms					& 6S 5B 2F 6W \hlx
-	3 on Farms							& 6S 5B 5F 6W \hlx
-	2 on Gold							& 6S 5B 5F 6W 2G \hlx
-	\cmd{Feudal Age}					& \hlx
-	Build Blacksmith / Market			& 3S 5B 5F 6W 2G \hlx
-	2 on Wood							& 3S 5B 5F 8W 2G \hlx
-	1 to Wood / 2 to Gold				& 3S 5B 5F 9W 4G \hlx
-	2 Berries to Gold					& 3S 3B 5F 9W 6G \hlx
-	\cmd{Castle Age}					& \hlx
-	Build Monastery / Siege Workshop	& \\
-	\mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- 22 Men-at-Arms - Towers ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{22 Men-at-Arms - Towers}} \\
-	\mytoprule
-	6 on Sheep											& 6S \hlx
-	4 on Wood											& 6S 4W \hlx
-	1 Lure Boar											& 7S 4W \hlx
-	4 on Berries										& 7S 4B 4W \hlx
-	3 on Boar											& 10S 4B 4W \hlx
-	Build Barracks										& \hlx
-	2 on Gold											& 10S 4B 4W 2G \hlx
-	\cmd{Click Feudal Age}								& \hlx
-	$\downarrow$ 0 on Gold* / 5 on Stone / 5 Forward	& 3S 4B 4W 5S \hlx
-	\cmd{Feudal Age}									& \hlx
-	Research Men-at-Arms								& \hlx
-	Villages on Farms									& \\
-	\mybottomrule
-\end{tabularx}
-*after mining 40 gold for men-at-arms upgrade
-
-\vfill\null
-\columnbreak
-
-% ---------- 28 Drush - Archers ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{28 Drush - Archers}} \\
-	\mytoprule
-	6 on Sheep							& 6S \hlx
-	4 on Wood							& 6S 4W \hlx
-	1 Lure Boar							& 7S 4W \hlx
-	4 on Berries						& 7S 4B 4W \hlx
-	Mine 10 Gold and to Wood			& 7S 4B 5W \hlx
-	Build Barracks						& \hlx
-	$\uparrow$ 12 on Sheep / 3 on Farm	& 12S 4B 3F 5W \hlx
-	\cmd{Click Feudal Age}				& \hlx
-	8 to Wood / 4 to Gold				& 4B 3F 13W 4G \hlx
-	\cmd{Feudal Age}					& \hlx
-	Build 2 Ranges / Blacksmith			& \hlx
-	$\uparrow$ 8 on Gold				& 4B 3F 12W 8G \hlx
-	$\uparrow$ 18 on Farms				& 18F 12W 8G \\
-	\mybottomrule
-\end{tabularx}
-Three militia created in Dark Age are used to delay the opponent. This is a way of buying time to mass archers. It can be quite weak against the men-at-arms build, since the opponent will have militia to defend, which can then be upgraded upon Feudal Age.
-\spacebtwtables
 
 % ---------- 23 Archers ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{23 Archers}} \\
 	\mytoprule
-	6 on Sheep					& 6S \hlx
-	4 on Wood					& 6S 4W \hlx
-	1 Lure Boar					& 7S 4W \hlx
-	4 on Berries				& 7S 4B 4W \hlx
-	+2 on Boar / 1 to Farms		& 8S 4B 1F 4W \hlx
-	5 on Wood					& 8S 4B 1F 9W \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	2 Sheep to Wood (5+6)		& \hlx
-	3 Sheep to Gold				& 3S 4B 1F 11W 3G \hlx
-	Build Barracks (60\%)		& \hlx
-	\cmd{Feudal Age}			& \hlx
-	Build 2 Ranges / Blacksmith	& \hlx
-	$\uparrow$ 8 on Gold		& 3S 4B 1F 11W 8G \hlx
-	$\uparrow$ 18 on Farms		& 18F 11W 8G \\
+	6 on Sheep                        & 6S \hlx
+	4 on Wood                         & 6S 4W \hlx
+	1 Lure Boar                       & 7S 4W \hlx
+	4 on Berry                        & 7S 4B 4W \hlx
+	2 on Boar, 1 to Farm              & 8S 4B 1F 4W \hlx
+	5 on Wood (4+5)                   & 8S 4B 1F 9W \hlx
+	Research Loom                     & \hlx
+	\cmd{Click Feudal Age}            & \hlx
+	2 Sheep to Wood                   & \hlx
+	3 Sheep to Gold                   & 3S 4B 1F 11W 3G \hlx
+	Build Barracks (60\%)             & \hlx
+	\cmd{Feudal Age}                  & \hlx
+	Build 2 Ranges, make archers      & \hlx
+	Research Axe                      & \hlx
+	$\uparrow$ 8 on Gold              & 3S 4B 1F 11W 8G \hlx
+	Build Blacksmith                  & \hlx
+	Research Fletching                & \hlx
+	Research Horse Collar (Optional)  & \hlx
+	Research Wheelbarrow              & \hlx
+    $\uparrow$ 14 on Wood, 16 on Farm & 16F 14W 8G \\
 	\mybottomrule
 \end{tabularx}
-The aim of this build is to keep the ranges working constantly. It is a slower build since archers need to be massed and need fletching as a minimum to be effective. This build is weak against the faster scout build.
+\textbf{Benchmarks}: \textit{8:35} Feudal + 23P, \textit{13:50} 6 Archers + Fletching, \textit{19:45} Click Castle + 24 Archers \\
 \spacebtwtables
-
-% ---------- 19 Mongol Scout Rush ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{19 Mongol Scout Rush}} \\
-	\mytoprule
-	6 on Sheep					& 6S \hlx
-	3 on Wood					& 6S 3W \hlx
-	1 Lure Boar					& 7S 3W \hlx
-	4 on Berries				& 7S 4B 3W \hlx
-	$\uparrow$ 11 on Sheep		& 11S 4B 3W \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	5 Sheep to Wood (4+4)		& 6S 4B 8W \\
-	\mybottomrule
-\end{tabularx}
-
-\vfill\null
-\columnbreak
 
 % ---------- 28+2 Fast Castle - Knights ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{28+2 Fast Castle - Knights}} \\
 	\mytoprule
-	6 on Sheep					& 6S \hlx
-	4 on Wood					& 6S 4W \hlx
-	1 Lure Boar					& 7S 4W \hlx
-	5 on Berries				& 7S 5B 4W \hlx
-	+2 on Boar / 2 to Farms		& 7S 5B 2F 4W \hlx
-	$\uparrow$ 10 on Wood		& 7S 5B 2F 10W \hlx
-	3 on Gold					& 7S 5B 2F 10W 3G \hlx
-	\cmd{Click Feudal Age}		& \hlx
-	Build Barracks				& \hlx
-	6 to Farms					& 5B 8F 10W 3G \hlx
-	\cmd{Feudal Age}			& \hlx
-	Build Blacksmith / Stable	& \hlx
-	2 on Gold					& 5B 8F 10W 5G \hlx
-	\cmd{Click Castle Age}		& \hlx
-	2 Berries to Farms			& 3B 10F 10W 5G \hlx
-	Build Stable				& \\
+	6 on Sheep                    & 6S \hlx
+	4 on Wood                     & 6S 4W \hlx
+	1 Lure Boar                   & 7S 4W \hlx
+	5 on Berry                    & 7S 5B 4W \hlx
+	2 on Boar, 2 to Farm          & 7S 5B 2F 4W \hlx
+	$\uparrow$ 10 on Wood (5+5)   & 7S 5B 2F 10W \hlx
+	3 on Gold                     & 7S 5B 2F 10W 3G \hlx
+	Research Loom                 & \hlx
+	\cmd{Click Feudal Age}        & \hlx
+	Build Barracks (60\%)         & \hlx
+	6 to Farm                     & 5B 8F 10W 3G \hlx
+	\cmd{Feudal Age}              & \hlx
+	Build Blacksmith, Stable      & \hlx
+	2 on Gold                     & 5B 8F 10W 5G \hlx
+	\cmd{Click Castle Age}        & \hlx
+	Research Axe, Horse Collar    & \hlx
+	2 Berry to Farm               & 3B 10F 10W 5G \hlx
+	Build Stable                  & \\
 	\mybottomrule
 \end{tabularx}
-Usually done from pocket position in team games. This build order allows at least 6 knights to be produced from both, followed by constant production from one stable.
+\textbf{Benchmarks}: \textit{10:40} Feudal + 28P, \textit{13:50} Castle + 30P, \textit{18:15} 6 Knight \\
+
+\newpage
+
+% ---------- 27+2 3TC Boom ---------- %
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{27+2 3TC Boom}} \\
+	\mytoprule
+	6 on Sheep                                   & 6S \hlx
+	4 on Wood                                    & 6S 4W \hlx
+	1 Lure Boar                                  & 7S 4W \hlx
+	5 on Berry                                   & 7S 5B 4W \hlx
+	2 on Boar, 2 to Farm                         & 7S 5B 2F 4W \hlx
+	$\uparrow$ 9 on Wood (4+5)                   & 7S 5B 2F 9W \hlx
+	3 on Gold                                    & 7S 5B 2F 9W 3G \hlx
+	Research Loom                                & \hlx
+	\cmd{Click Feudal Age}                       & \hlx
+	6 Sheep to Farm                              & 1S 5B 8F 9W 3G \hlx
+	\cmd{Feudal Age}                             & \hlx
+	Build Blacksmith, Market                     & \hlx
+	2 on Wood                                    & 1S 5B 8F 11W 3G \hlx
+	\cmd{Click Castle Age}                       & \hlx
+	Research Axe, Horse Collar                   & \hlx
+	1 Sheep to Wood, 2 Berry to Wood             & 3B 8F 14W 3G \hlx	
+	\cmd{Castle Age}                             & \hlx
+	Build 2 Town Centers                         & \hlx
+	Research Bow Saw                             & \hlx
+	$\uparrow$ 18 on Farm                        & \\
+	\mybottomrule
+\end{tabularx}
+\textbf{Benchmarks}: \textit{10:15} Feudal + 27P, \textit{13:25} Castle, \textit{22:00} 60P + Eco \\
 \spacebtwtables
+
+% ---------- 26 Hybrid ---------- %
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{26 Hybrid}} \\
+	\mytoprule
+	6 on Sheep                                     & 6S \hlx
+	4 on Wood                                      & 6S 4W \hlx
+	1 Lure Boar                                    & 7S 4W \hlx
+	Build Dock*, Make 4 Ships                      & 7S 4W \hlx
+	2 on Wood                                      & 7S 6W \hlx
+	$\uparrow$ 14 on Sheep                         & 14S 6W \hlx
+	Research Loom                                  & \hlx
+	\cmd{Click Feudal Age}                         & \hlx
+	4 Sheep to Gold                                & \hlx
+	8 Sheep to Wood, 2 Sheep to Straggler          & 16W 4G \hlx
+	Build Barracks                                 & \hlx
+	\cmd{Feudal Age}                               & \hlx
+	Research Axe                                   & \hlx
+	Build 2 Ranges, Make Archers                   & \hlx
+	Make Fire Galleys                              & \hlx
+	$\uparrow$ 8 on Gold                           & 16W 8G \hlx
+	Build Blacksmith                               & \hlx
+	Research Fletching                             & \hlx
+	Finish Sheep, Then Berry                       & 6S 14W 8G \hlx
+	$\uparrow$ 12 on Farm, $\downarrow$ 10 on Wood & 6B 10F 10W 8G \\
+	\mybottomrule
+\end{tabularx}
+\textbf{Benchmarks}: \textit{8:10} Feudal + 26P, \textit{14:50} 3 Fire Galleys + 8 Archers + Fletching, \textit{18:00} Click Castle + 18 Archers \\
+$\ast$ Make a house first - this villager becomes the designated builder, and should build houses and other buildings as needed. \\
+
+\vfill\null
+\columnbreak
+
+% ---------- 26+2 Arena Castle Drop ---------- %
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{26+2 Arena Castle Drop}} \\
+	\mytoprule
+	6 on Sheep                                  & 6S \hlx
+	4 on Wood                                   & 6S 4W \hlx
+	1 Lure Boar                                 & 7S 4W \hlx
+	4 on Berry                                  & 7S 4B 4W \hlx
+	+3 on Boar, 3 to Farm                       & 7S 4B 3F 4W \hlx
+	2 on Wood                                   & 7S 4B 3F 6W \hlx
+	3 on Stone                                  & 7S 4B 3F 6W 3S \hlx
+	2 on Gold                                   & 7S 4B 3F 6W 2G 3S \hlx
+	\cmd{Click Feudal Age}                      & \hlx
+	\cmd{Feudal Age}                            & \hlx
+	Build Blacksmith, Market                    & \hlx
+	2 on Stone                                  & 7S 4B 3F 6W 2G 5S \hlx
+	\cmd{Click Castle Age}                      & \hlx
+	2 Sheep to Wood                             & 5S 4B 3F 8W 2G 5S \hlx
+	Research Axe, Horse Collar                  & \hlx
+	5 Sheep to Farm                             & 4B 8F 8W 2G 5S \hlx
+	\cmd{Castle Age}                            & \hlx
+	Build Castle                                & 5S 4B 3F 8W 2G \hlx
+	Research Bow Saw                            & \hlx
+	$\uparrow$ 13 on Farm, $\uparrow$ 8 on Gold & \hlx
+	Research Wheelbarrow                        & 13F 8W 8G \\
+	\mybottomrule
+\end{tabularx}
+\textbf{Benchmarks}: \textit{9:25} Feudal + 26P, \textit{12:30} Castle + 28P, \textit{19:00} 6 Unique Units \\
+
+\vfill\null
 
 \end{multicols*}
 \end{document}
