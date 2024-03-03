@@ -64,8 +64,7 @@
     Ungarrison                    & \cmd{G} \hlx
     Pack                          & \cmd{G} \hlx
     Unload                        & \cmd{G} \hlx
-    Stop                          & \cmd{S} \hlx
-    Delete All Selected Unit      & \cmd{\shiftp Delete} \\
+    Stop                          & \cmd{S} \\
     \mybottomrule
 \end{tabularx}
 \spacebtwtables
@@ -84,25 +83,29 @@
 \end{tabularx}
 \spacebtwtables
 
-% ---------- Cycle Commands ---------- %
+% ---------- Taunts ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
-    \mytoprule
-    Go to Archery Range                & \cmd{\textasciitilde} \hlx
-    Go to Stable                       & \cmd{Tab} \hlx
-    Go to Town Center                  & \cmd{Space} \hlx
-    Go to Next Idle Military Unit      & \cmd{Wheel-Up} \hlx
-    Go to Last Notification            & \cmd{Middle-Button} \hlx
-    Go to Next Idle Villager           & \cmd{Wheel-Down} \hlx
-    Go to Barracks                     & \cmd{\ctrlp B} \hlx
-    Go to Black Smith                  & \cmd{\ctrlp S} \hlx
-    Go to Castle                       & \cmd{\ctrlp V} \hlx
-    Go to Dock                         & \cmd{\ctrlp D} \hlx
-    Go to Lumber Camp                  & \cmd{\ctrlp Z} \hlx
-    Go to Mining Camp                  & \cmd{\ctrlp G} \hlx
-    Go to Siege Workshop               & \cmd{\ctrlp C} \hlx
-    Go to Mill                         & \cmd{\ctrlp R} \\
-    \mybottomrule
+	\multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
+	\mytoprule
+	Attack Player 1    & \cmd{$\backslash$61} \hlx
+	Delete Object      & \cmd{$\backslash$69} \hlx
+	You Resign         & \cmd{$\backslash$105} \hlx
+	Attack Location    & \cmd{$\backslash$47} \hlx
+	Raiding Party      & \cmd{$\backslash$35} \hlx
+	Build Market       & \cmd{$\backslash$52} \\
+	\mybottomrule
+\end{tabularx}
+\spacebtwtables
+
+% ---------- Miscellaneous ---------- %
+\begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
+	\mytoprule
+	Petard Damage              & +900 vs Wall and Gate, +500 vs Building \\
+	& +100 vs Castle, +60 vs Siege Weapon \hlx
+	Build Speed                & $3t/(n+2)$ with Single Villager Time $t$ \hlx
+	Age up Time                & Feudal 130s, Castle 160s, Imperial 190s \\
+	\mybottomrule
 \end{tabularx}
 \spacebtwtables
 
@@ -160,63 +163,94 @@
 \end{tabularx}
 \spacebtwtables
 
-% ---------- Villager Build ---------- %
+% ---------- Cycle Commands ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
-    \mytoprule
-    Rotate Gate        & \cmd{\ctrlp Wheel} \hlx
-    Archery Range      & \cmd{A} \hlx
-    Barracks           & \cmd{B} \hlx
-    Blacksmith         & \cmd{S} \hlx
-    Castle             & \cmd{V} \hlx
-    Dock               & \cmd{D} \hlx
-    Farm               & \cmd{F} \hlx
-    House              & \cmd{E} \hlx
-    Lumber Camp        & \cmd{Z} \hlx
-    Market             & \cmd{M} \hlx
-    Mill               & \cmd{R} \hlx
-    Mining Camp        & \cmd{G} \hlx
-    Monastery          & \cmd{Y} \hlx
-    Outpost            & \cmd{O} \hlx
-    Palisade Gate      & \cmd{X} \hlx
-    Palisade Wall      & \cmd{Q} \hlx
-    Stable             & \cmd{T} \hlx
-    Siege Workshop     & \cmd{C} \hlx
-    Stone Gate         & \cmd{H} \hlx
-    Stone Wall         & \cmd{W} \hlx
-    Town Center        & \cmd{N} \hlx
-    Watch Tower        & \cmd{J} \\
-    \mybottomrule
+	\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
+	\mytoprule
+	Go to Archery Range                & \cmd{\ctrlp A} \hlx
+	Go to Stable                       & \cmd{\ctrlp S} \hlx
+	Go to Town Center                  & \cmd{Space} \hlx
+	Go to Next Idle Military Unit      & \cmd{Wheel-Up} \hlx
+	Go to Last Notification            & \cmd{Middle-Button} \hlx
+	Go to Next Idle Villager           & \cmd{Wheel-Down} \hlx
+	Go to Barracks                     & \cmd{\ctrlp B} \hlx
+	Go to Black Smith                  & \cmd{\ctrlp T} \hlx
+	Go to Castle                       & \cmd{\ctrlp V} \hlx
+	Go to Dock                         & \cmd{\ctrlp D} \hlx
+	Go to Lumber Camp                  & \cmd{\ctrlp Z} \hlx
+	Go to Mining Camp                  & \cmd{\ctrlp G} \hlx
+	Go to Siege Workshop               & \cmd{\ctrlp C} \hlx
+	Go to Mill                         & \cmd{\ctrlp R} \hlx
+	Select All Archery Ranges          & \cmd{\ctrlp A} \hlx
+	Select All Stables                 & \cmd{\ctrlp \shiftp S} \hlx
+	Select All Barracks                & \cmd{\ctrlp \shiftp B} \hlx
+	Select All Castles                 & \cmd{\ctrlp \shiftp V} \hlx
+	\mybottomrule
 \end{tabularx}
+
 \vfill\null
 \columnbreak
 
-% ---------- Taunts ---------- %
+% ---------- Villager Build ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
-    \mytoprule
-    Attack Player 1    & \cmd{$\backslash$61} \hlx
-    Delete Object      & \cmd{$\backslash$69} \hlx
-    You Resign         & \cmd{$\backslash$105} \hlx
-    Attack Location    & \cmd{$\backslash$47} \hlx
-    Raiding Party      & \cmd{$\backslash$35} \hlx
-    Build Market       & \cmd{$\backslash$52} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Miscellaneous ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
-    \mytoprule
-    Petard Damage              & +900 vs Wall and Gate, +500 vs Building \\
-                               & +100 vs Castle, +60 vs Siege Weapon \hlx
-    Build Speed                & $3t/(n+2)$ with Single Villager Time $t$ \hlx
-    Age up Time                & Feudal 130s, Castle 160s, Imperial 190s \\
-    \mybottomrule
+	\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
+	\mytoprule
+	Rotate Gate        & \cmd{\ctrlp Wheel} \hlx
+	Archery Range      & \cmd{A} \hlx
+	Barracks           & \cmd{B} \hlx
+	Blacksmith         & \cmd{T} \hlx
+	Castle             & \cmd{V} \hlx
+	Dock               & \cmd{D} \hlx
+	Farm               & \cmd{F} \hlx
+	House              & \cmd{E} \hlx
+	Lumber Camp        & \cmd{Z} \hlx
+	Mule Cart          & \cmd{Z} \hlx
+	Market             & \cmd{M} \hlx
+	Mill               & \cmd{R} \hlx
+	Mining Camp        & \cmd{G} \hlx
+	Monastery          & \cmd{Y} \hlx
+	Outpost            & \cmd{O} \hlx
+	Palisade Gate      & \cmd{X} \hlx
+	Palisade Wall      & \cmd{Q} \hlx
+	Stable             & \cmd{S} \hlx
+	Siege Workshop     & \cmd{C} \hlx
+	Stone Gate         & \cmd{H} \hlx
+	Stone Wall         & \cmd{W} \hlx
+	Town Center        & \cmd{N} \hlx
+	Watch Tower        & \cmd{J} \\
+	\mybottomrule
 \end{tabularx}
 \vfill\null
 
+% ---------- 25+2 Fast Castle Drop ---------- %
+\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+	\multicolumn{2}{@{}l@{}}{\headbf{25+2 Fast Castle Drop}} \\
+	\mytoprule
+	6 on Sheep                                   & 6S \hlx
+	3 on Wood                                    & 6S 3W \hlx
+	1 Lure Boar                                  & 7S 3W \hlx
+	1 on Berry                                   & 7S 1B 3W \hlx
+	3 on Boar                                    & 10S 1B 3W \hlx
+	4 on Berry                                   & 10S 5B 3W \hlx
+	3 Boar to Farm                               & 7S 5B 3F 3W \hlx
+	4 on Wood (Only 1 Lumber Camp)               & 7S 5B 3F 7W \hlx
+	2 on Gold                                    & 7S 5B 3F 7W 2G \hlx
+	\cmd{Click Feudal Age}                       & \hlx
+	4 Sheep to Stone                             & \hlx
+	3 Sheep to Straggler Tree                    & 5B 3F 10W 2G 4S \hlx
+	\cmd{Feudal Age at 10:55}                    & \hlx
+	Build Blacksmith, Market                     & 5B 3F 7W 2G 4S \hlx
+	2 on Stone                                   & 5B 3F 7W 2G 6S \hlx
+	\cmd{Click Castle Age}                       & \hlx
+	Research Axe, Horse Collar                   & \hlx
+	\cmd{Castle Age at 14:25}                    & \hlx
+	6 Stone to Build Castle                      & \hlx
+	Research Bow Saw                             & \\
+	\mybottomrule
+\end{tabularx}
+\textbf{Recommended}: Spanish, Turks, Mayans, Burgundians, Mongols \\
+
+\columnbreak
 % ---------- 24+2 Fast Castle Boom ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
 	\multicolumn{2}{@{}l@{}}{\headbf{24+2 Fast Castle Boom}} \\
@@ -248,7 +282,7 @@
 	\mybottomrule
 \end{tabularx}
 \textbf{Recommended}: Burgundians, Bohemians, Portuguese, Bengalis, Poles \\
-\columnbreak
+\spacebtwtables
 
 % ---------- 19 Scout Rush ---------- %
 \begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
@@ -272,35 +306,6 @@
 	\mybottomrule
 \end{tabularx}
 \textbf{Recommended}: Franks, Huns, Lithuanians, Magyars, Malians \\
-\spacebtwtables
-
-% ---------- 25+2 Fast Castle Drop ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{25+2 Fast Castle Drop}} \\
-	\mytoprule
-	6 on Sheep                                   & 6S \hlx
-	3 on Wood                                    & 6S 3W \hlx
-	1 Lure Boar                                  & 7S 3W \hlx
-	1 on Berry                                   & 7S 1B 3W \hlx
-	3 on Boar                                    & 10S 1B 3W \hlx
-	4 on Berry                                   & 10S 5B 3W \hlx
-	3 Boar to Farm                               & 7S 5B 3F 3W \hlx
-	4 on Wood (Only 1 Lumber Camp)               & 7S 5B 3F 7W \hlx
-	2 on Gold                                    & 7S 5B 3F 7W 2G \hlx
-	\cmd{Click Feudal Age}                       & \hlx
-	4 Sheep to Stone                             & \hlx
-	3 Sheep to Straggler Tree                    & 5B 3F 10W 2G 4S \hlx
-	\cmd{Feudal Age at 10:55}                    & \hlx
-	Build Blacksmith, Market                     & 5B 3F 7W 2G 4S \hlx
-	2 on Stone                                   & 5B 3F 7W 2G 6S \hlx
-	\cmd{Click Castle Age}                       & \hlx
-	Research Axe, Horse Collar                   & \hlx
-	\cmd{Castle Age at 14:25}                    & \hlx
-	6 Stone to Build Castle                      & \hlx
-	Research Bow Saw                             & \\
-	\mybottomrule
-\end{tabularx}
-\textbf{Recommended}: Spanish, Turks, Mayans, Burgundians, Mongols \\
 \vfill\null
 \end{multicols*}
 \end{document}
