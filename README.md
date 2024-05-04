@@ -15,3 +15,5 @@ The document should be built with `PdfLaTeX`.
 - St4rk Tutorials: https://www.youtube.com/channel/UCoX5HqFM4qEGJYfj0TEOIpg
 
 - Build Order Reference: https://buildorderreference.com/
+
+- Hera Build Orders: https://www.patreon.com/heraaoe2/posts
