@@ -6,7 +6,7 @@ Since the default keyboard shortcuts are either hard to remember or too far to p
 
 The document should be built with `PdfLaTeX`.
 
-# Reference
+## Reference
 
 - Keyboard Shortcuts by Meng: https://www.bilibili.com/video/av22359198
 
