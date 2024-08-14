@@ -39,299 +39,303 @@
 
 \begin{document}
 \begin{multicols*}{4}
-% ---------- Title ---------- %
-\begin{mdframed}[style=mystyle]
-\begin{center}
-    \fontfamily{pnc} \selectfont
-    \large\scshape
-    Age of Empires 2 \\
-    Reference \\
-    \bigskip
-    \footnotesize Author: Yize Wang \\
-    \footnotesize Last Updated: \today
-\end{center}
-\end{mdframed}
-\scriptsize
-\bigskip
-
-% ---------- Unit Commands ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
-    \mytoprule
-    Economic Buildings            & \cmd{B} \hlx
-    Set Gather Point              & \cmd{A} \hlx
-    Garrison                      & \cmd{G} \hlx
-    Ungarrison                    & \cmd{G} \hlx
-    Pack                          & \cmd{G} \hlx
-    Unload                        & \cmd{G} \hlx
-    Stop                          & \cmd{S} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Game Commands ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
-    \mytoprule
-    Pause Game                 & \cmd{F3} \hlx
-    Display Statistics         & \cmd{F4} \hlx
-    Display Game Time          & \cmd{F11} \hlx
-    Chat Dialog                & \cmd{\altp T} \hlx
-    Diplomacy                  & \cmd{\altp D} \hlx
-    Flare                      & \cmd{\altp F} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Taunts ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Taunts}} \\
-	\mytoprule
-	Attack Player 1    & \cmd{$\backslash$61} \hlx
-	Delete Object      & \cmd{$\backslash$69} \hlx
-	You Resign         & \cmd{$\backslash$105} \hlx
-	Attack Location    & \cmd{$\backslash$47} \hlx
-	Raiding Party      & \cmd{$\backslash$35} \hlx
-	Build Market       & \cmd{$\backslash$52} \\
-	\mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Miscellaneous ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}} \\
-	\mytoprule
-	Petard Damage              & +900 vs Wall and Gate, +500 vs Building \\
-	& +100 vs Castle, +60 vs Siege Weapon \hlx
-	Build Speed                & $3t/(n+2)$ with Single Villager Time $t$ \hlx
-	Age up Time                & Feudal 130s, Castle 160s, Imperial 190s \\
-	\mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Chat Options ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Chat Options}} \\
-    \mytoprule
-    Talk to All                & \cmd{* + Words} \hlx
-    Talk to Enemy              & \cmd{\# + Words} \hlx
-    Talk to Allies             & \cmd{; + Words} \\
-    \mybottomrule
-\end{tabularx}
-\vfill\null
-\columnbreak
-
-% ---------- Military Units ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
-    \mytoprule
-    No Attack                  & \cmd{S} \hlx
-    Attack Ground              & \cmd{T} \hlx
-    Box Formulation            & \cmd{X} \hlx
-    Flank Formulation          & \cmd{F} \hlx
-    Line Formulation           & \cmd{Q} \hlx
-    Staggered Formulation      & \cmd{C} \hlx
-    Attach Move                & \cmd{A} \hlx
-    Stand Ground               & \cmd{N} \hlx 
-    Patrol                     & \cmd{Z} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Town Center ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
-    \mytoprule
-    Villager                & \cmd{C} \hlx
-    Go back to Work         & \cmd{W} \hlx
-    Research Loom           & \cmd{S} \hlx
-    Age up                  & \cmd{Z} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Dock ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-    \multicolumn{2}{@{}l@{}}{\headbf{Dock}} \\
-    \mytoprule
-    Fishing Ship           & \cmd{F} \hlx
-    Galley                 & \cmd{G} \hlx
-    Transport Ship         & \cmd{T} \hlx
-    Fire Galley            & \cmd{R} \hlx
-    Demolition Raft        & \cmd{D} \\
-    \mybottomrule
-\end{tabularx}
-\spacebtwtables
-
-% ---------- Cycle Commands ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}} \\
-	\mytoprule
-	Go to Archery Range                & \cmd{\ctrlp A} \hlx
-	Go to Stable                       & \cmd{\ctrlp S} \hlx
-	Go to Town Center                  & \cmd{Space} \hlx
-	Go to Next Idle Military Unit      & \cmd{Wheel-Up} \hlx
-	Go to Last Notification            & \cmd{Middle-Button} \hlx
-	Go to Next Idle Villager           & \cmd{Wheel-Down} \hlx
-	Go to Barracks                     & \cmd{\ctrlp B} \hlx
-	Go to Black Smith                  & \cmd{\ctrlp T} \hlx
-	Go to Castle                       & \cmd{\ctrlp V} \hlx
-	Go to Dock                         & \cmd{\ctrlp D} \hlx
-	Go to Lumber Camp                  & \cmd{\ctrlp Z} \hlx
-	Go to Mining Camp                  & \cmd{\ctrlp G} \hlx
-	Go to Siege Workshop               & \cmd{\ctrlp C} \hlx
-	Go to Mill                         & \cmd{\ctrlp R} \hlx
-	Select All Archery Ranges          & \cmd{\ctrlp A} \hlx
-	Select All Stables                 & \cmd{\ctrlp \shiftp S} \hlx
-	Select All Barracks                & \cmd{\ctrlp \shiftp B} \hlx
-	Select All Castles                 & \cmd{\ctrlp \shiftp V} \hlx
-	\mybottomrule
-\end{tabularx}
-
-\vfill\null
-\columnbreak
-
-% ---------- Villager Build ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
-	\mytoprule
-	Rotate Gate        & \cmd{\ctrlp Wheel} \hlx
-	Archery Range      & \cmd{A} \hlx
-	Barracks           & \cmd{B} \hlx
-	Blacksmith         & \cmd{T} \hlx
-	Castle             & \cmd{V} \hlx
-	Dock               & \cmd{D} \hlx
-	Farm               & \cmd{F} \hlx
-	House              & \cmd{E} \hlx
-	Lumber Camp        & \cmd{Z} \hlx
-	Mule Cart          & \cmd{Z} \hlx
-	Market             & \cmd{M} \hlx
-	Mill               & \cmd{R} \hlx
-	Mining Camp        & \cmd{G} \hlx
-	Monastery          & \cmd{Y} \hlx
-	Outpost            & \cmd{O} \hlx
-	Palisade Gate      & \cmd{X} \hlx
-	Palisade Wall      & \cmd{Q} \hlx
-	Stable             & \cmd{S} \hlx
-	Siege Workshop     & \cmd{C} \hlx
-	Stone Gate         & \cmd{H} \hlx
-	Stone Wall         & \cmd{W} \hlx
-	Town Center        & \cmd{N} \hlx
-	Watch Tower        & \cmd{J} \\
-	\mybottomrule
-\end{tabularx}
-\vfill\null
-
-% ---------- 25+2 Fast Castle Drop ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{25+2 Fast Castle Drop}} \\
-	\mytoprule
-	6 on Sheep                                   & 6S \hlx
-	3 on Wood                                    & 6S 3W \hlx
-	1 Lure Boar                                  & 7S 3W \hlx
-	1 on Berry                                   & 7S 1B 3W \hlx
-	3 on Boar                                    & 10S 1B 3W \hlx
-	4 on Berry                                   & 10S 5B 3W \hlx
-	3 Boar to Farm                               & 7S 5B 3F 3W \hlx
-	4 on Wood (Only 1 Lumber Camp)               & 7S 5B 3F 7W \hlx
-	2 on Gold                                    & 7S 5B 3F 7W 2G \hlx
-	\cmd{Click Feudal Age}                       & \hlx
-	4 Sheep to Stone                             & \hlx
-	3 Sheep to Straggler Tree                    & 5B 3F 10W 2G 4S \hlx
-	\cmd{Feudal Age at 10:55}                    & \hlx
-	Build Blacksmith, Market                     & 5B 3F 7W 2G 4S \hlx
-	2 on Stone                                   & 5B 3F 7W 2G 6S \hlx
-	\cmd{Click Castle Age}                       & \hlx
-	Research Axe, Horse Collar                   & \hlx
-	\cmd{Castle Age at 14:25}                    & \hlx
-	6 Stone to Build Castle                      & \hlx
-	Research Bow Saw                             & \\
-	\mybottomrule
-\end{tabularx}
-\textbf{Recommended}: Spanish, Turks, Mayans, Burgundians, Mongols \\
-
-\columnbreak
-% ---------- 24+2 Fast Castle Boom ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{24+2 Fast Castle Boom}} \\
-	\mytoprule
-	6 on Sheep                                   & 6S \hlx
-	3 on Wood                                    & 6S 3W \hlx
-	1 Lure Boar                                  & 7S 3W \hlx
-	1 on Berry                                   & 7S 1B 3W \hlx
-	2 on Boar                                    & 9S 1B 3W \hlx
-	4 on Berry                                   & 9S 5B 3W \hlx
-	4 on Wood (Only 1 Lumber Camp)               & 5S 5B 4F 7W \hlx
-	4 Boar to Farm                               & 5S 5B 4F 3W \hlx
-	Build House                                  & \hlx
-	2 on Gold                                    & 5S 5B 4F 7W 2G \hlx
-	\cmd{Click Feudal Age}                       & \hlx
-	Build House                                  & \hlx
-	\cmd{Feudal Age at 10:30}                    & \hlx
-	Build Blacksmith, Market                     & 2S 5B 4F 7W 2G \hlx
-	2 on Wood                                    & 2S 5B 4F 9W 2G \hlx
-	3 Builders to Straggler Tree                 & 2S 5B 4F 12W 2G \hlx
-	\cmd{Click Castle Age}                       & \hlx
-	Research Axe, Horse Collar                   & \hlx
-	2 Sheep to Farm                              & 5B 6F 12W 2G  \hlx
-	\cmd{Castle Age at 14:00}                    & \hlx
-	Build 2 Town Centers                         & \hlx
-	Research Bow Saw                             & \hlx
-	$\uparrow$ 18 on Farm                        & \hlx
-	Research Wheelbarrow                         & \\
-	\mybottomrule
-\end{tabularx}
-\textbf{Recommended}: Burgundians, Bohemians, Portuguese, Bengalis, Poles \\
-\spacebtwtables
-
-% ---------- 19 Scout Rush ---------- %
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{2}{@{}l@{}}{\headbf{19 Scout Rush}} \\
-	\mytoprule
-	6 on Sheep                                & 6S \hlx
-	2 on Wood                                 & 6S 2W \hlx
-	1 Lure Boar                               & 7S 2W \hlx
-	1 on Berry                                & 7S 1B 2W \hlx
-	6 on Bore                                 & 13S 1B 2W \hlx
-	2 on Wood                                 & 13S 1B 4W \hlx
-	Research Loom                             & \hlx
-	\cmd{Click Feudal Age}                    & \hlx
-	5 Sheep to Wood                           & \hlx
-	4 Sheep to Berry                          & 4S 5B 9W\hlx
-	1 Sheep to Build Barracks                 & 3S 5B 9W\hlx
-	\cmd{Feudal Age at 8:50}                  & \hlx
-	1 Sheep to Build Stable                   & 2S 5B 9W \hlx
-	Research Axe, Horse Collar                & \hlx
-	Wall around Base                          &	\\
-	\mybottomrule
-\end{tabularx}
-\textbf{Recommended}: Franks, Huns, Lithuanians, Magyars, Malians \\
-\vfill\null
-
-\pagebreak
-
-\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
-	\multicolumn{1}{@{}l@{}}{\headbf{MODs}} \\
-	\mytoprule
-Zetnus Improved Grid Mod by \textit{Zetnus} \hlx
-Mule only Mule Carts by  \textit{SaladEsc} \hlx
-Selected Small Trees with Grid Shadow by \textit{Anne HK} \hlx
-New Palisade Wall (with Player Color) No Flags by \textit{Anne HK} \hlx
-New Fish Border by \textit{Anne HK} \hlx
-Identical Pine Trees with Grid Shadow by \textit{Anne HK} \hlx
-Building Foundation Label (with Player Color) by\textit{ Anne HK} \hlx
-Boar Pointer by \textit{Anne HK} \hlx
-Bigger and Eye-catching Relic by \textit{Anne HK} \hlx
-Better Resource Panel and Idle Villager Icon by \textit{Anne HK} \hlx
-Monk Pointer (Always Visible) by \textit{Anne HK} \hlx
-Dock for Fish Boom by \textit{Anne HK} \hlx
-Idle Villager Pointer (UHD supported) by \textit{Tevious7621} \hlx
-Dark Age Town Center by \textit{Addy607623} \hlx
-Larger Onager Projectiles by \textit{AoE Official} \hlx
-Golden Bombard Cannons by \textit{AoE Official}\hlx
-Age 2 DE Chinese Simplified - Fix by \textit{Unpublished} \hlx
-Improved Extended Tooltips by \textit{Harooooo1}	\\
-	\mybottomrule
-\end{tabularx}
+	% ---------- Title ---------- %
+	\begin{mdframed}[style=mystyle]
+		\begin{center}
+			\fontfamily{pnc} \selectfont
+			\large\scshape
+			Age of Empires 2 \\
+			Reference \\
+			\bigskip
+			\footnotesize Author: Yize Wang \\
+			\footnotesize Last Updated: \today
+		\end{center}
+	\end{mdframed}
+	\scriptsize
+	\bigskip
+	
+	% ---------- Unit Commands ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Unit Commands}} \\
+		\mytoprule
+		Economic Buildings & \cmd{B} \hlx
+		Set Gather Point   & \cmd{A} \hlx
+		Garrison           & \cmd{G} \hlx
+		Ungarrison         & \cmd{G} \hlx
+		Pack               & \cmd{G} \hlx
+		Unload             & \cmd{G} \hlx
+		Stop               & \cmd{S}                     \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Game Commands ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Game Commands}} \\
+		\mytoprule
+		Pause Game         & \cmd{F3} \hlx
+		Display Statistics & \cmd{F4} \hlx
+		Display Game Time  & \cmd{F11} \hlx
+		Chat Dialog        & \cmd{\altp T} \hlx
+		Diplomacy          & \cmd{\altp D} \hlx
+		Flare              & \cmd{\altp F}               \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Taunts ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Taunts}}     \\
+		\mytoprule
+		Attack Player 1 & \cmd{$\backslash$61} \hlx
+		Delete Object   & \cmd{$\backslash$69} \hlx
+		You Resign      & \cmd{$\backslash$105} \hlx
+		Attack Location & \cmd{$\backslash$47} \hlx
+		Raiding Party   & \cmd{$\backslash$35} \hlx
+		Build Market    & \cmd{$\backslash$52}        \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Miscellaneous ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LM@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Miscellaneous}}               \\
+		\mytoprule
+		Petard Damage & +900 vs Wall and Gate, +500 vs Building        \\
+		              & +100 vs Castle, +60 vs Siege Weapon \hlx
+		Build Speed   & $3t/(n+2)$ with Single Villager Time $t$ \hlx
+		Age up Time   & Feudal 130s, Castle 160s, Imperial 190s        \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Chat Options ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Chat Options}} \\
+		\mytoprule
+		Talk to All    & \cmd{* + Words} \hlx
+		Talk to Enemy  & \cmd{\# + Words} \hlx
+		Talk to Allies & \cmd{; + Words}                \\
+		\mybottomrule
+	\end{tabularx}
+	
+	\vfill\null
+	\columnbreak
+	
+	% ---------- Military Units ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Military Units}} \\
+		\mytoprule
+		No Attack             & \cmd{S} \hlx
+		Attack Ground         & \cmd{T} \hlx
+		Box Formulation       & \cmd{X} \hlx
+		Flank Formulation     & \cmd{F} \hlx
+		Line Formulation      & \cmd{Q} \hlx
+		Staggered Formulation & \cmd{C} \hlx
+		Attach Move           & \cmd{A} \hlx
+		Stand Ground          & \cmd{N} \hlx 
+		Patrol                & \cmd{Z}                   \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Town Center ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Town Center}} \\
+		\mytoprule
+		Villager        & \cmd{C} \hlx
+		Go back to Work & \cmd{W} \hlx
+		Research Loom   & \cmd{S} \hlx
+		Age up          & \cmd{Z}                      \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Dock ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Dock}} \\
+		\mytoprule
+		Fishing Ship    & \cmd{F} \hlx
+		Galley          & \cmd{G} \hlx
+		Transport Ship  & \cmd{T} \hlx
+		Fire Galley     & \cmd{R} \hlx
+		Demolition Raft & \cmd{D}               \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- Cycle Commands ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Cycle Commands}}            \\
+		\mytoprule
+		Go to Archery Range           & \cmd{\ctrlp A} \hlx
+		Go to Stable                  & \cmd{\ctrlp S} \hlx
+		Go to Town Center             & \cmd{Space} \hlx
+		Go to Next Idle Military Unit & \cmd{Wheel-Up} \hlx
+		Go to Last Notification       & \cmd{Middle-Button} \hlx
+		Go to Next Idle Villager      & \cmd{Wheel-Down} \hlx
+		Go to Barracks                & \cmd{\ctrlp B} \hlx
+		Go to Black Smith             & \cmd{\ctrlp T} \hlx
+		Go to Castle                  & \cmd{\ctrlp V} \hlx
+		Go to Dock                    & \cmd{\ctrlp D} \hlx
+		Go to Lumber Camp             & \cmd{\ctrlp Z} \hlx
+		Go to Mining Camp             & \cmd{\ctrlp G} \hlx
+		Go to Siege Workshop          & \cmd{\ctrlp C} \hlx
+		Go to Mill                    & \cmd{\ctrlp R} \hlx
+		Select All Archery Ranges     & \cmd{\ctrlp A} \hlx
+		Select All Stables            & \cmd{\ctrlp \shiftp S} \hlx
+		Select All Barracks           & \cmd{\ctrlp \shiftp B} \hlx
+		Select All Castles            & \cmd{\ctrlp \shiftp V} \hlx
+		\mybottomrule
+	\end{tabularx}
+	
+	\vfill\null
+	\columnbreak
+	
+	% ---------- Villager Build ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{Villager Build}} \\
+		\mytoprule
+		Rotate Gate    & \cmd{\ctrlp Wheel} \hlx
+		Archery Range  & \cmd{A} \hlx
+		Barracks       & \cmd{B} \hlx
+		Blacksmith     & \cmd{T} \hlx
+		Castle         & \cmd{V} \hlx
+		Dock           & \cmd{D} \hlx
+		Farm           & \cmd{F} \hlx
+		House          & \cmd{E} \hlx
+		Lumber Camp    & \cmd{Z} \hlx
+		Mule Cart      & \cmd{Z} \hlx
+		Market         & \cmd{M} \hlx
+		Mill           & \cmd{R} \hlx
+		Mining Camp    & \cmd{G} \hlx
+		Monastery      & \cmd{Y} \hlx
+		Outpost        & \cmd{O} \hlx
+		Palisade Gate  & \cmd{X} \hlx
+		Palisade Wall  & \cmd{Q} \hlx
+		Stable         & \cmd{S} \hlx
+		Siege Workshop & \cmd{C} \hlx
+		Stone Gate     & \cmd{H} \hlx
+		Stone Wall     & \cmd{W} \hlx
+		Town Center    & \cmd{N} \hlx
+		Watch Tower    & \cmd{J}                          \\
+		\mybottomrule
+	\end{tabularx}
+	\spacebtwtables
+	
+	% ---------- 25+2 Fast Castle Drop ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{25+2 Fast Castle Drop}} \\
+		\mytoprule
+		6 on Sheep                     & 6S \hlx
+		3 on Wood                      & 6S 3W \hlx
+		1 Lure Boar                    & 7S 3W \hlx
+		1 on Berry                     & 7S 1B 3W \hlx
+		3 on Boar                      & 10S 1B 3W \hlx
+		4 on Berry                     & 10S 5B 3W \hlx
+		3 Boar to Farm                 & 7S 5B 3F 3W \hlx
+		4 on Wood (Only 1 Lumber Camp) & 7S 5B 3F 7W \hlx
+		2 on Gold                      & 7S 5B 3F 7W 2G \hlx
+		\cmd{Click Feudal Age}         & \hlx
+		4 Sheep to Stone               & \hlx
+		3 Sheep to Straggler Tree      & 5B 3F 10W 2G 4S \hlx
+		\cmd{Feudal Age at 10:55}      & \hlx
+		Build Blacksmith, Market       & 5B 3F 7W 2G 4S \hlx
+		2 on Stone                     & 5B 3F 7W 2G 6S \hlx
+		\cmd{Click Castle Age}         & \hlx
+		Research Axe, Horse Collar     & \hlx
+		\cmd{Castle Age at 14:25}      & \hlx
+		6 Stone to Build Castle        & \hlx
+		Research Bow Saw               &                         \\
+		\mybottomrule
+	\end{tabularx}
+	\textbf{Recommended}: Spanish, Turks, Mayans, Burgundians, Mongols \\
+	
+	\vfill\null
+	\columnbreak
+	
+	\columnbreak
+	% ---------- 24+2 Fast Castle Boom ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{24+2 Fast Castle Boom}} \\
+		\mytoprule
+		6 on Sheep                     & 6S \hlx
+		3 on Wood                      & 6S 3W \hlx
+		1 Lure Boar                    & 7S 3W \hlx
+		1 on Berry                     & 7S 1B 3W \hlx
+		2 on Boar                      & 9S 1B 3W \hlx
+		4 on Berry                     & 9S 5B 3W \hlx
+		4 on Wood (Only 1 Lumber Camp) & 5S 5B 4F 7W \hlx
+		4 Boar to Farm                 & 5S 5B 4F 3W \hlx
+		Build House                    & \hlx
+		2 on Gold                      & 5S 5B 4F 7W 2G \hlx
+		\cmd{Click Feudal Age}         & \hlx
+		Build House                    & \hlx
+		\cmd{Feudal Age at 10:30}      & \hlx
+		Build Blacksmith, Market       & 2S 5B 4F 7W 2G \hlx
+		2 on Wood                      & 2S 5B 4F 9W 2G \hlx
+		3 Builders to Straggler Tree   & 2S 5B 4F 12W 2G \hlx
+		\cmd{Click Castle Age}         & \hlx
+		Research Axe, Horse Collar     & \hlx
+		2 Sheep to Farm                & 5B 6F 12W 2G  \hlx
+		\cmd{Castle Age at 14:00}      & \hlx
+		Build 2 Town Centers           & \hlx
+		Research Bow Saw               & \hlx
+		$\uparrow$ 18 on Farm          & \hlx
+		Research Wheelbarrow           &                         \\
+		\mybottomrule
+	\end{tabularx}
+	\textbf{Recommended}: Burgundians, Bohemians, Portuguese, Bengalis, Poles
+	\spacebtwtables
+	
+	% ---------- 19 Scout Rush ---------- %
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{2}{@{}l@{}}{\headbf{19 Scout Rush}} \\
+		\mytoprule
+		6 on Sheep                 & 6S \hlx
+		2 on Wood                  & 6S 2W \hlx
+		1 Lure Boar                & 7S 2W \hlx
+		1 on Berry                 & 7S 1B 2W \hlx
+		6 on Bore                  & 13S 1B 2W \hlx
+		2 on Wood                  & 13S 1B 4W \hlx
+		Research Loom              & \hlx
+		\cmd{Click Feudal Age}     & \hlx
+		5 Sheep to Wood            & \hlx
+		4 Sheep to Berry           & 4S 5B 9W\hlx
+		1 Sheep to Build Barracks  & 3S 5B 9W\hlx
+		\cmd{Feudal Age at 8:50}   & \hlx
+		1 Sheep to Build Stable    & 2S 5B 9W \hlx
+		Research Axe, Horse Collar & \hlx
+		Wall around Base           &                     \\
+		\mybottomrule
+	\end{tabularx}
+	\textbf{Recommended}: Franks, Huns, Lithuanians, Magyars, Malians \\
+	\vfill\null
+	
+	\pagebreak
+	
+	\begin{tabularx}{\linewidth}[ht]{@{}LR@{}}
+		\multicolumn{1}{@{}l@{}}{\headbf{MODs}}          \\
+		\mytoprule
+		Zetnus Improved Grid Mod by \textit{Zetnus} \hlx
+		Mule only Mule Carts by  \textit{SaladEsc} \hlx
+		Selected Small Trees with Grid Shadow by \textit{Anne HK} \hlx
+		New Palisade Wall (with Player Color) No Flags by \textit{Anne HK} \hlx
+		New Fish Border by \textit{Anne HK} \hlx
+		Identical Pine Trees with Grid Shadow by \textit{Anne HK} \hlx
+		Building Foundation Label (with Player Color) by \textit{Anne HK} \hlx
+		Boar Pointer by \textit{Anne HK} \hlx
+		Bigger and Eye-catching Relic by \textit{Anne HK} \hlx
+		Better Resource Panel and Idle Villager Icon by \textit{Anne HK} \hlx
+		Monk Pointer (Always Visible) by \textit{Anne HK} \hlx
+		Dock for Fish Boom by \textit{Anne HK} \hlx
+		Idle Villager Pointer (UHD supported) by \textit{Tevious7621} \hlx
+		Dark Age Town Center by \textit{Addy607623} \hlx
+		Larger Onager Projectiles by \textit{AoE Official} \hlx
+		Golden Bombard Cannons by \textit{AoE Official}\hlx
+		Age 2 DE Chinese Simplified - Fix by \textit{Unpublished} \hlx
+		Improved Extended Tooltips by \textit{Harooooo1} \\
+		\mybottomrule
+	\end{tabularx}
 \end{multicols*}
 \end{document}
